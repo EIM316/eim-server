@@ -1,3 +1,4 @@
+require("./ping.js");
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 
@@ -76,3 +77,4 @@ httpServer.listen(PORT, () => {
   console.log(`🎮 Socket.IO server running on port ${PORT}`);
   console.log(`🌐 Allowed origin: ${process.env.FRONTEND_URL || "*"}`);
 });
+
